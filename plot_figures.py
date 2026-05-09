@@ -828,11 +828,11 @@ def generate_original_figures(root: Path = MAIN_ROOT) -> list[Path]:
     out: list[Path] = []
 
     cfgs = [
-        (1, 'sta_valid', 'H0_details.csv', METHODS_STATIC, None, 'Type-I error rate',
+        (1, 'sta_valid', 'H0_details.csv', METHODS_STATIC, None, 'Type I error rate',
          'fig1_sta_valid_sharp_null_size_continuous.pdf', True, SIZE_Y_LIMITS),
         (2, 'sta_power', 'H0_details.csv', METHODS_STATIC, None, 'Power',
          'fig2_sta_power_sharp_null_power_continuous.pdf', False, RATE_Y_LIMITS),
-        (6, 'lag_valid', 'H0lF_details.csv', METHODS_LAG, {'l': FISHER_LAG}, 'Type-I error rate',
+        (6, 'lag_valid', 'H0lF_details.csv', METHODS_LAG, {'l': FISHER_LAG}, 'Type I error rate',
          'fig6_lag_valid_fisher_l0_size_continuous.pdf', True, SIZE_Y_LIMITS),
         (7, 'lag_power', 'H0lF_details.csv', METHODS_LAG, {'l': FISHER_LAG}, 'Power',
          'fig7_lag_power_fisher_l0_power_continuous.pdf', False, RATE_Y_LIMITS),
@@ -851,7 +851,7 @@ def generate_original_figures(root: Path = MAIN_ROOT) -> list[Path]:
     out.append(fig3_path)
 
     for prefix, filename, filters, ylabel, out_name, is_size, y_limits in [
-        ('lag_valid', 'H0tl_details.csv', {'t': 1}, 'Type-I error rate', 'fig4_lag_valid_t1_by_l_size.pdf', True, SIZE_Y_LIMITS),
+        ('lag_valid', 'H0tl_details.csv', {'t': 1}, 'Type I error rate', 'fig4_lag_valid_t1_by_l_size.pdf', True, SIZE_Y_LIMITS),
         ('lag_power', 'H0tl_details.csv', {'t': 1}, 'Power', 'fig5_lag_power_t1_by_l_power.pdf', False, RATE_Y_LIMITS),
     ]:
         _, source = resolve_sample_source(root, prefix, FIG45_SAMPLE_SIZE)
@@ -871,11 +871,11 @@ def generate_mpdta_figures(source: Path) -> list[Path]:
 
     line_specs = [
         (8, ['sta_valid/validity_static_raw.csv', 'sta_valid/validity_static_summary.csv'], METHODS_MPDTA_STATIC, 'source_t',
-         MPDTA_STATIC_SOURCE_T_ORDER, 't', 'Type-I error rate', 'fig8_mpdta_sta_valid_size_by_source_t.pdf', True, SIZE_Y_LIMITS),
+         MPDTA_STATIC_SOURCE_T_ORDER, 't', 'Type I error rate', 'fig8_mpdta_sta_valid_size_by_source_t.pdf', True, SIZE_Y_LIMITS),
         (9, ['sta_power/power_static_raw.csv', 'sta_power/power_static_summary.csv'], METHODS_MPDTA_STATIC, 'source_t',
          MPDTA_STATIC_SOURCE_T_ORDER, 't', 'Power', 'fig9_mpdta_sta_power_power_by_source_t.pdf', False, RATE_Y_LIMITS),
         (10, ['lag_valid/validity_lagged_raw.csv', 'lag_valid/validity_lagged_summary.csv'], METHODS_MPDTA_LAG, 'lag',
-         MPDTA_LAG_ORDER, 'Lag size', 'Type-I error rate', 'fig10_mpdta_lag_valid_size_by_lag.pdf', True, SIZE_Y_LIMITS),
+         MPDTA_LAG_ORDER, 'Lag size', 'Type I error rate', 'fig10_mpdta_lag_valid_size_by_lag.pdf', True, SIZE_Y_LIMITS),
         (11, ['lag_power/power_lagged_raw.csv', 'lag_power/power_lagged_summary.csv'], METHODS_MPDTA_LAG, 'lag',
          MPDTA_LAG_ORDER, 'Lag size', 'Power', 'fig11_mpdta_lag_power_power_by_lag.pdf', False, RATE_Y_LIMITS),
     ]
