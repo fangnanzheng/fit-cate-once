@@ -1,0 +1,168 @@
+{
+  "T": 5,
+  "assumption": "lagged",
+  "basis_degree": 1,
+  "cohort_props": [
+    0.1,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.1
+  ],
+  "convex_max_iters": 2000,
+  "dgp_name": "lagged_shared_easy_x_sign_warm_start",
+  "direct_description": "Direct R-learner trained from the same revealed assignments without a warm-start magnitude.",
+  "experiment": "start",
+  "lagged_dgp": "shared_easy",
+  "lambda_trace": 1.0,
+  "lambda_trace_schedule": "inv_sqrt_n",
+  "m_grid": [
+    25,
+    50,
+    100,
+    200,
+    400,
+    800,
+    1600,
+    3200
+  ],
+  "max_nfev": 2000,
+  "moment_best_map": {
+    "200": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 250,
+      "subsample": 1.0
+    },
+    "400": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 250,
+      "subsample": 1.0
+    },
+    "800": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 250,
+      "subsample": 1.0
+    },
+    "1600": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 250,
+      "subsample": 1.0
+    },
+    "3200": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 250,
+      "subsample": 1.0
+    },
+    "6400": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 250,
+      "subsample": 1.0
+    },
+    "12800": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 250,
+      "subsample": 1.0
+    },
+    "25600": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 250,
+      "subsample": 1.0
+    }
+  },
+  "moment_degree": 1,
+  "mu_best_map": {
+    "200": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 200,
+      "subsample": 1.0
+    },
+    "400": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 200,
+      "subsample": 1.0
+    },
+    "800": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 200,
+      "subsample": 1.0
+    },
+    "1600": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 200,
+      "subsample": 1.0
+    },
+    "3200": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 200,
+      "subsample": 1.0
+    },
+    "6400": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 200,
+      "subsample": 1.0
+    },
+    "12800": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 200,
+      "subsample": 1.0
+    },
+    "25600": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 20,
+      "n_estimators": 200,
+      "subsample": 1.0
+    }
+  },
+  "mu_degree": 1,
+  "n_reps": 20,
+  "n_starts": 5,
+  "nls_ridge": 0.0,
+  "nls_ridge_schedule": "fixed",
+  "noise_sd": 0.1,
+  "nonparametric_config_source": "built_in_start_specific_defaults",
+  "option": "nonparametric",
+  "refine_nls": true,
+  "ridge_alpha": 0.0,
+  "seed": 12345,
+  "sign_threshold": 0.0,
+  "stage2_degree": 1,
+  "stage2_learning_rate": 0.05,
+  "stage2_n_estimators": 60,
+  "stage2_tree_max_depth": 1,
+  "stage2_tree_min_leaf": 20,
+  "start_N": 25600,
+  "use_convex_init": true,
+  "warm_start_description": "The assignment-blind nonparametric RC first stage estimates a lag-0-normalized CATE representative on the full sample. The start DGP uses shared-easy lagged CATE shape multiplied by an x-dependent sign. The second stage uses revealed assignments only and a GBRT R-learner-style weighted regression to learn the missing sign function g(x), then applies sign(g_hat(x)) * |tau_hat_RC(x)| across all lags."
+}

@@ -1,0 +1,159 @@
+{
+  "T": 5,
+  "assumption": "lagged",
+  "basis_degree": 1,
+  "cohort_props": [
+    0.1,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.1
+  ],
+  "convex_max_iters": 2000,
+  "dgp_name": "lagged_shared_easy_linear_last_lag",
+  "experiment": "raw",
+  "lagged_dgp": "shared_easy",
+  "lambda_trace": 1.0,
+  "lambda_trace_schedule": "inv_sqrt_n",
+  "max_nfev": 2000,
+  "moment_best_map": {
+    "200": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 60,
+      "subsample": 1.0
+    },
+    "400": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 60,
+      "subsample": 1.0
+    },
+    "800": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 60,
+      "subsample": 1.0
+    },
+    "1600": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 60,
+      "subsample": 1.0
+    },
+    "3200": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 60,
+      "subsample": 1.0
+    },
+    "6400": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 60,
+      "subsample": 1.0
+    },
+    "12800": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 60,
+      "subsample": 1.0
+    },
+    "25600": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 60,
+      "subsample": 1.0
+    }
+  },
+  "moment_degree": 1,
+  "mu_best_map": {
+    "200": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 40,
+      "subsample": 1.0
+    },
+    "400": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 40,
+      "subsample": 1.0
+    },
+    "800": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 40,
+      "subsample": 1.0
+    },
+    "1600": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 40,
+      "subsample": 1.0
+    },
+    "3200": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 40,
+      "subsample": 1.0
+    },
+    "6400": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 40,
+      "subsample": 1.0
+    },
+    "12800": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 40,
+      "subsample": 1.0
+    },
+    "25600": {
+      "learning_rate": 0.1,
+      "max_depth": 1,
+      "min_samples_leaf": 50,
+      "n_estimators": 40,
+      "subsample": 1.0
+    }
+  },
+  "mu_degree": 1,
+  "n_grid": [
+    200,
+    400,
+    800,
+    1600,
+    3200,
+    6400,
+    12800,
+    25600
+  ],
+  "n_reps": 20,
+  "n_starts": 5,
+  "nls_ridge": 0.0,
+  "nls_ridge_schedule": "fixed",
+  "noise_sd": 0.1,
+  "nonparametric_config_source": "built_in_fast_plateau_v3_defaults",
+  "option": "nonparametric",
+  "refine_nls": true,
+  "ridge_alpha": 0.0,
+  "seed": 12345,
+  "use_convex_init": true
+}
