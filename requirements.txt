@@ -1,0 +1,8 @@
+# Runtime dependencies for the simulation and plotting scripts.
+# Tested with Python 3.10+.
+numpy>=1.23,<3
+pandas>=2.0,<3
+scipy>=1.10,<2
+scikit-learn>=1.2,<2
+joblib>=1.2,<2
+matplotlib>=3.7,<4
