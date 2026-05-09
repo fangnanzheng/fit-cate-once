@@ -1,4 +1,4 @@
-# CATE-Assisted Randomization Tests for Staggered Adoption Panels
+# Fit CATE Once: Model-Assisted Randomization Tests Without Sample Splitting
 
 This repository contains simulation code, semi-synthetic county employment experiments, consistency experiments, generated CSV results, and paper figures for CATE-assisted randomization tests in staggered adoption designs.
 
