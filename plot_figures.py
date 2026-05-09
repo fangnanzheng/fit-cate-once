@@ -599,7 +599,7 @@ def plot_mpdta_threshold_ci(
     if true_vals.size:
         ax.axhline(float(true_vals[0]), color='black', linestyle='--', linewidth=2.0)
     ax.set_xticks(x.tolist())
-    ax.set_xlabel('tau', fontsize=label_fontsize, labelpad=10)
+    ax.set_xlabel(r'$\tau_*$', fontsize=label_fontsize, labelpad=10)
     ax.set_ylabel('Estimated threshold', fontsize=label_fontsize, labelpad=10)
     ax.tick_params(axis='both', labelsize=tick_fontsize)
     y_min = float(np.nanmin(np.r_[df['ci_low'].to_numpy(dtype=float), true_vals])) if true_vals.size else float(
@@ -933,7 +933,7 @@ def generate_mpdta_figures(source: Path) -> list[Path]:
             summary = summarize_mpdta_subgroup_taus(source, subgroup_dirs, subgroup, method='RV')
             path = OUT_DIR / out_name
             line_plot_by_x(
-                summary, 'tau', METHODS_MPDTA_SUBGROUP, 'tau', ylabel, path,
+                summary, 'tau', METHODS_MPDTA_SUBGROUP, r'$\tau_*$', ylabel, path,
                 is_size=(fig_no == 16), x_order=list(subgroup_dirs.keys()), figsize=(7, 7),
                 label_fontsize=24, tick_fontsize=24, legend_fontsize=18,
                 y_limits=(SIZE_Y_LIMITS if fig_no == 16 else RATE_Y_LIMITS), show_legend=False,
