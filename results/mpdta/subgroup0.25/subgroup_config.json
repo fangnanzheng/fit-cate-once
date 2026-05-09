@@ -1,0 +1,88 @@
+{
+  "alpha": 0.1,
+  "assumption": "static",
+  "data_path": "D:\\Research\\Residual Covariances\\workspace\\final\\mpdta.csv",
+  "experiment": "subgroup",
+  "experiment_normalized": "subgroup",
+  "lagged_power_base_profile": [
+    0.6,
+    1.0,
+    1.4,
+    1.8,
+    2.2
+  ],
+  "lagged_power_rank_slope_profile": [
+    0.4,
+    0.9,
+    1.4,
+    1.9,
+    2.4
+  ],
+  "mpdta_mu_gbrt_params": {
+    "learning_rate": 0.01,
+    "max_depth": 2,
+    "min_samples_leaf": 6,
+    "n_estimators": 2500,
+    "subsample": 1.0
+  },
+  "mpdta_rc_moment_gbrt_params": {
+    "alpha": 0.9,
+    "learning_rate": 0.008,
+    "loss": "huber",
+    "max_depth": 1,
+    "min_samples_leaf": 60,
+    "n_estimators": 450,
+    "subsample": 1.0
+  },
+  "mpdta_rv_moment_gbrt_params": {
+    "alpha": 0.9,
+    "learning_rate": 0.01,
+    "loss": "huber",
+    "max_depth": 1,
+    "min_samples_leaf": 60,
+    "n_estimators": 300,
+    "subsample": 1.0
+  },
+  "mpdta_trend_scale": 2.0,
+  "n_jobs": -1,
+  "n_perms": 300,
+  "n_reps": 100,
+  "nonparametric_kind": "cart",
+  "out_dir": "results/mpdta/subgroup0.25",
+  "power_cate_score": "W_i = 2 * ((rank(Z_i) - 0.5) / N) - 1",
+  "rc_basis_degree": 1,
+  "rc_lambda_trace": 0.0,
+  "rc_mu_degree": 1,
+  "rc_nls_ridge": 0.0,
+  "reported_lags": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rv_b_degree": 1,
+  "rv_mu_degree": 1,
+  "seed": 12345,
+  "static_power_base_magnitude": 0.4,
+  "static_power_rank_slope": 0.04,
+  "subgroup_b_leaf_grid": [
+    10,
+    20,
+    40
+  ],
+  "subgroup_mu_leaf_grid": [
+    40,
+    60,
+    80,
+    100
+  ],
+  "subgroup_oof_folds": 5,
+  "subgroup_statistic": "aipw",
+  "subgroup_stump_min_frac": 0.25,
+  "subgroup_threshold_method": "bagged_threshold_left_quantile",
+  "subgroup_threshold_n_bags": 200,
+  "subgroup_threshold_quantile": 0.05,
+  "tau": 0.25,
+  "true_nuisance": false
+}

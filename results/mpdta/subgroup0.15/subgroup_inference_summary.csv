@@ -1,0 +1,3 @@
+subgroup,statistic,method,reject_rate,mean_pvalue,mean_stat,n
+effective_subgroup,aipw,RV,1.0,0.0033222591362126247,-0.1439910606271532,100
+null_subgroup,aipw,RV,0.1,0.5370431893687708,-0.00045485673891289984,100

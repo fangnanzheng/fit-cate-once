@@ -1,0 +1,11 @@
+setting,assumption,hypothesis,source_t,statistic,method,reject_rate,mean_pvalue,mean_stat,n
+validity,static,H0,1,likelihood,RV,0.14,0.5052491694352159,-0.4630694117284292,100
+validity,static,H0,1,likelihood,TWFE,0.09,0.4609433760875426,0.0812241820104821,100
+validity,static,H0,2,likelihood,RV,0.09,0.5099335548172758,-0.37924900590066035,100
+validity,static,H0,2,likelihood,TWFE,0.09,0.4609433760875426,0.0812241820104821,100
+validity,static,H0,3,likelihood,RV,0.11,0.4691362126245847,-0.6786125311915421,100
+validity,static,H0,3,likelihood,TWFE,0.09,0.4609433760875426,0.0812241820104821,100
+validity,static,H0,4,likelihood,RV,0.11,0.5485382059800664,-0.04201135635585552,100
+validity,static,H0,4,likelihood,TWFE,0.09,0.4609433760875426,0.0812241820104821,100
+validity,static,H0,5,likelihood,RV,0.14,0.47691029900332227,-0.7418459418288111,100
+validity,static,H0,5,likelihood,TWFE,0.09,0.4609433760875426,0.0812241820104821,100

@@ -1,0 +1,11 @@
+setting,assumption,hypothesis,lag,statistic,method,reject_rate,mean_pvalue,mean_stat,n
+validity,lagged,H0l,0,likelihood,RC,0.07,0.536046511627907,-1.98968701913737,100
+validity,lagged,H0l,0,likelihood,TWFE,0.16,0.4783503304191434,0.08271598475003202,100
+validity,lagged,H0l,1,likelihood,RC,0.11,0.5054485049833887,-2.0877794374977108,100
+validity,lagged,H0l,1,likelihood,TWFE,0.13,0.4741273211157152,0.1559945420521392,100
+validity,lagged,H0l,2,likelihood,RC,0.1,0.5109302325581395,-6.6694477433774235,100
+validity,lagged,H0l,2,likelihood,TWFE,0.14,0.47189978661597487,0.21104812481891774,100
+validity,lagged,H0l,3,likelihood,RC,0.13,0.5357475083056478,-54664.34052669784,100
+validity,lagged,H0l,3,likelihood,TWFE,0.14,0.47788420987039776,0.24419959128667984,100
+validity,lagged,H0l,4,likelihood,RC,0.07,0.5290033222591363,-57628.0677869873,100
+validity,lagged,H0l,4,likelihood,TWFE,0.15,0.4934913022716759,0.145206734546932,100
