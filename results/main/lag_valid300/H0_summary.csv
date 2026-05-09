@@ -1,0 +1,6 @@
+method,assumption,setting,reject_rate,rmse,mean_p
+DM,lagged,validity,0.13,,0.5026047904191617
+Oracle,lagged,validity,0.0,,1.0
+RC,lagged,validity,0.06,0.48900077478925064,0.4993712574850299
+SS,lagged,validity,0.105,0.965498093471887,0.5048802395209581
+cDM,lagged,validity,0.085,,0.5188023952095808

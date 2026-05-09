@@ -1,0 +1,52 @@
+{
+  "assumption":"lagged",
+  "setting":"validity",
+  "option":"nonparametric",
+  "n_reps":200,
+  "n_perms":500,
+  "alpha":0.1,
+  "seed":12345,
+  "two_sided":false,
+  "T":5,
+  "N":400,
+  "cohort_props":[
+    0.1,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.1
+  ],
+  "counts":[
+    40,
+    80,
+    80,
+    80,
+    80,
+    40
+  ],
+  "n_subgroups":5,
+  "h0tl_lags":[
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "true_nuisances":false,
+  "main_dgp":{
+    "version":"h2_sparse_positive_3p5_static_cov_unitvar",
+    "responder_prob_scale":0.08,
+    "responder_probability":"0.08 * sigmoid(X1)",
+    "positive_effect":3.5,
+    "negative_effect":-0.1,
+    "lagged_profile":[
+      1.0,
+      0.9,
+      0.81,
+      0.729,
+      0.6561
+    ],
+    "subgroups":"five empirical X1 quintiles"
+  }
+}

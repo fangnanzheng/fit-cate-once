@@ -1,0 +1,6 @@
+method,assumption,setting,reject_rate,rmse,mean_p
+DM,static,validity,0.115,,0.49156686626746504
+Oracle,static,validity,0.0,,1.0
+RV,static,validity,0.09,0.7210057114042323,0.5093213572854292
+SS,static,validity,0.14,1.002535357881989,0.48939121756487025
+cDM,static,validity,0.105,,0.5026546906187624

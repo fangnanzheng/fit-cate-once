@@ -1,0 +1,6 @@
+method,assumption,setting,reject_rate,rmse,mean_p
+DM,static,power,0.125,,0.4528542914171657
+Oracle,static,power,1.0,,0.0023253493013972054
+RV,static,power,0.745,0.9427463793767353,0.09766467065868265
+SS,static,power,0.345,1.0516164146551394,0.40440119760479043
+cDM,static,power,0.25,,0.35843313373253494

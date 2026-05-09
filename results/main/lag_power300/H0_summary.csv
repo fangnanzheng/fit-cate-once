@@ -1,0 +1,6 @@
+method,assumption,setting,reject_rate,rmse,mean_p
+DM,lagged,power,0.145,,0.4703493013972056
+Oracle,lagged,power,0.995,,0.004780439121756487
+RC,lagged,power,0.31,1.015002160959586,0.3054291417165669
+SS,lagged,power,0.135,1.1794649824605519,0.5034431137724551
+cDM,lagged,power,0.165,,0.43010978043912174
