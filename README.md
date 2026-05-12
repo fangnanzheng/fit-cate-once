@@ -1,6 +1,6 @@
 # Fit CATE Once: Model-Assisted Randomization Tests Without Sample Splitting
 
-This repository contains simulation code, semi-synthetic county employment experiments, consistency experiments, generated CSV results, and paper figures for CATE-assisted randomization tests in staggered adoption designs.
+This repository contains simulation code, semi-synthetic county employment experiments, consistency experiments, generated CSV results, and figures for [our paper](https://arxiv.org/abs/2605.09116).
 
 The main comparison methods are:
 
